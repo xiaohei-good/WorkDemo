@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  quartztest:
+    image: ${DOCKER_REGISTRY-}quartztest
+    build:
+      context: .
+      dockerfile: QuartzTest/Dockerfile
+      
+#  mysql:
+#    image: mysql:5.6.51
+#    container_name: quartztestdatabase
+#    environment:
+#      MYSQL_ROOT_PASSWORD: collenda
+#      MYSQL_DATABASE: quartztest
+#      MYSQL_USER: cn
+#      MYSQL_PASSWORD: collenda
+networks:
+  testnetwork:
+

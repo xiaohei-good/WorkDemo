@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  quartztest:
+    environment:
+#      - ConnectionStrings__ConnectionString=server=127.0.0.1;port=3306;database=quartztest;user=cn;password=collenda 
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "7108:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ./QuartzTest/dbfile/quartztest.db:/app/quartztest.db
+    networks:
+      - testnetwork
+#    depends_on:
+#      mysql:
+#        condition: service_healthy
+#  mysql:
+#    networks:
+#      - testnetwork
+#    restart: on-failure
+#    ports:
+#      - 3306:3306
+#    volumes:
+#     - ./mysql:/var/lib/mysql
+#    healthcheck:
+#      test: mysqladmin ping -h 127.0.0.1 -u cn --password=collenda

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <History>True|2022-08-26T07:00:14.1441258Z;True|2022-08-26T08:00:07.4262629+01:00;True|2022-08-26T07:59:50.4963685+01:00;True|2022-08-26T07:56:26.0565237+01:00;True|2022-08-26T06:40:15.0944287+01:00;False|2022-08-26T06:39:38.7500972+01:00;True|2022-08-26T04:39:09.9506085+01:00;True|2022-08-25T11:25:37.4496296+01:00;False|2022-08-25T11:23:36.0362557+01:00;</History>
+    <_PublishTargetUrl>C:\IISPublish</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>
